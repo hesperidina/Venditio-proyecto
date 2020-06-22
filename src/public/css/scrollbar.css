@@ -1,0 +1,18 @@
+/* Ancho */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+  /* Parte de atras */
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background: #F5F5F5
+}
+
+/* Barra de scroll */
+::-webkit-scrollbar-thumb {
+  background: #bebebe;
+  border-radius: 10px;
+
+
+}

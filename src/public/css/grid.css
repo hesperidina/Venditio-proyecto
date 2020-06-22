@@ -1,0 +1,75 @@
+
+.r4324234 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7,5%;
+  height: 6.8vh;
+}
+
+.jijo {
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1000, calc(100vw / 6));
+  height: 100vh;
+}
+
+ @media screen and (max-width:900px) {
+   .jijo {
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(1000, calc(100vw / 4));
+   }
+ }
+ @media screen and (max-width:600px) {
+   .jijo {
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(1000, calc(100vw / 2));
+   }
+ }
+.box {
+
+  font-family: arial;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+  display: flex;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.45);
+  align-items: flex-end;
+  padding: 10px;
+  -webkit-transition:all .8s ease;
+  -moz-transition:all .8s ease;
+  -ms-transition:all .8s ease;
+  -o-transition:all .8s ease;
+  z-index: 100;
+  -webkit-transition: all .5s ease; /* Safari and Chrome */
+  -moz-transition: all .5s ease; /* Firefox */
+  -ms-transition: all .5s ease; /* IE 9 */
+  -o-transition: all .5s ease; /* Opera */
+  transition: all .5s ease;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .jijo { grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1000, calc(100vw / 2));}
+  .box {   font-size: 42px;
+      border-width: 1rem;}
+  }
+
+#inicio {
+  background-image: url("/backgrounds/VenditioLogo.png") ;
+}
+.box:hover {
+  -webkit-transform:scale(1.05);
+  -moz-transform:scale(1.05);
+  -ms-transform:scale(1.05);
+  -o-transform:scale(1.05);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
+  text-decoration: none;
+  color:white;
+  z-index: 101;
+}
