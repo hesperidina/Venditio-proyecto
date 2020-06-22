@@ -215,7 +215,7 @@
         <div class="card-header">
           <form action="/publicarAnuncio" method="post" enctype="multipart/form-data">
             <div>
-              <input type="text" name="title" class="form-control tituloDeAnuncio" placeholder="Inserte un titulo" autofocus>
+              <input type="text" name="title" class="form-control tituloDeAnuncio" minlength="0" maxlength="50" placeholder="Inserte un titulo" autofocus>
               <input type="number" name="price" min="0" max="10000000" step="0.1" class="form-control precio" placeholder="Precio">
               <!-- File input field -->
               <input class="distancia" type="file" id="file" name="imgUrl" onchange="return fileValidation()"/>

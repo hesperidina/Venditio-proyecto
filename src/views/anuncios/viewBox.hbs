@@ -11,32 +11,34 @@
                 <div class="barra">
                           <div class=" textoBarra">
                               <div class="Perfil"><img src="/backgrounds/{{box2.filename}}" alt=""></div>
-                              <div class="aaaa23">{{#if box2.user}}@{{box2.user}}{{else}}Anonimo{{/if}}</div>
+                              <div class="aaaa23">{{#if box2.user}}@{{box2.user}}{{else}}Anonimo{{/if}} </div>
+                              <div style="float:right;" class="aaaa23 align-right">, {{box2.date}}</div>
                           </div>
                   </div>
         </div>
         <div class="barra2">
                   <div class="barra">
                             <div class="textoBarra">
-                                <div class=" aaaa23">{{box2.province}}, {{box2.date}}</div>
+                                <div class=" aaaa23">{{box2.province}}, {{box2.price}}$</div>
                             </div>
                     </div>
           </div>
         <article class="anuncioBox">
                                 <figure class="imagen2">
                     <div class=" imagen">
-                                            <a>
+                        <a>
                             <img src="/backgrounds/{{box2.filename}}">
                         </a>
                                                                                 </div>
                                     </figure>
                                 <header class="texto">
                     <h1 itemprop="name" class="tituloAnuncio">{{box2.title}}</h1>
+                    <div class="descripcionAnuncio">
+                      <strong>Contacto: {{box2.contact}}</strong>
+                    </div>
                     <div class="descripcionAnuncio">{{box2.description}}</div>
                 </header>
-
             </article>
-
     </div>
   </div>
   <div class="col-md-6 no-gutters">
@@ -46,7 +48,7 @@
         <!form action="/anuncio/{{box2.id}}/comment" method="post">
           <div class="barra">
                     <div class="textoBarra aeae">
-                        <div class="barra"> <textarea name="comentario" rows="6" cols="80" class="form-control" placeholder="Ingresa un comentario" id="message" placeholder="Escribi un comentario."></textarea>
+                        <div class="barra"> <textarea name="comentario" rows="6" cols="80" class="form-control aeae23" placeholder="Ingresa un comentario" id="message" placeholder="Escribi un comentario."></textarea>
                           <input id="name" name="name" type="hidden" value="{{#if user}} {{user.name}} {{else}} Anonimo {{/if}}">
                         </div>
                     </div>

@@ -1,24 +1,21 @@
-perfi
+
 
 .leftside, .rightside {
-  height: 50vh;
+  height: 100vh;
   overflow-y: auto;
   width: 100%;
   margin-top: 0.5rem;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
 }
 
 
 
- @media screen and (min-width:600px)
- {
-   .leftside, .rightside {
-       overflow-y: auto;
-     height:100vh;
-   }
- }
+
 .leftside {
-  background: #b6b6b6	;
+  background: 	#e1e6eb		;
+    padding-top: 20px;
 }
 
 .rightside {
@@ -66,7 +63,7 @@ figure.imagen2 {
     margin: 0;
     float: left;
     margin-right: 16px;
-    background: #303030;
+    background: #23232e;
     border-radius: 4px;
     padding: 8px;
     display: flex;
@@ -133,7 +130,7 @@ figure.imagen2 img {
 }
 
 .aeae2 {
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: #23232e;
 }
 
@@ -160,19 +157,10 @@ figure.imagen2 img {
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
+
 }
 
-.unselect {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.commentsTag {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 
 span.author {
     font-weight: 700;
@@ -183,56 +171,14 @@ span.author {
     align-items: center;
     margin-right: 8px;
 }
-.commentsTag span {
-    margin-right: 6px;
-}
 
-.commentTag {
-    background: #a2a2a2;
-    color: #fefefe;
-    border-radius: 3px;
-    font-size: 12px;
-    padding: 2px 5px;
-}
 .pointer {
     cursor: pointer;
 }
 
-.commentMetaRight {
-    display: flex;
-}
 
-.commentCreatedAt {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    color: #777777;
-}
-
-.commentAction {
-    display: flex;
-    align-items: center;
-}
-
-.commentAction i {
-    padding-left: 8px;
-    color: #a2a2a2;
-    cursor: pointer;
-}
-.fa, .fas {
-    font-weight: 900;
-}
-.fa, .far, .fas {
-    font-family: "Font Awesome 5 Free";
-}
-.fa, .fab, .fad, .fal, .far, .fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
+.commentContent {
+  word-break: break-word;
 }
 
 .commentList {
@@ -260,7 +206,112 @@ span.author {
     width: 50px;
     height: 50px;
 }
-
-.comment:hover {
-    background-color: #e3e3e3;
+.avatarColorBlack {
+    background: #242323;
+    width: 50px;
+    height: 50px;
 }
+.avatarColorWhite {
+    background: #f5f2f2;
+    width: 50px;
+    height: 50px;
+}
+.avatarColorMulti {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#fdcd3b 25%, #136699 25%, #136699 50%, #3d9932 50%, #3d9932 75%, #ca2b00 75%, #ca2b00 100%);
+  }
+  .avatarColorInvertido {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(#0232c4 25%, #ec9966 25%, #ec9966 50%, #c266cd 50%, #c266cd 75%, #35d4ff 75%, #35d4ff 100%);
+    }
+
+
+
+
+    @media (hover: none) and (pointer: coarse)
+     {
+       .jijo {
+         flex-wrap: wrap;
+         display: block;
+        height: calc(100vh - 50px);
+          flex-flow: row;
+       }
+
+       .leftside {
+         padding-top: 10px;
+         padding-bottom: 30px;
+         flex-basis: 100vw;
+         height: 100vh;
+         width: 100vw;
+         height: auto;
+         position: static;
+       }
+
+       .rightside {
+        flex-grow: 1;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        flex-basis: 100%;
+    }
+
+    .aeae23 {
+      height: 50px;
+    }
+    .avatarColoryellow {
+        width: 100px;
+        height: 100px;
+    }
+    .avatarColorgreen {
+        width: 100px;
+        height: 100px;
+    }
+    .avatarColorred {
+        width: 100px;
+        height: 100px;
+    }
+    .avatarColorblue {
+        width: 100px;
+        height: 100px;
+    }
+    .avatarColorBlack {
+        width: 100px;
+        height: 100px;
+    }
+    .avatarColorWhite {
+        width: 100px;
+        height: 100px;
+    }
+    .avatarColorMulti {
+        width: 100px;
+        height: 100px;
+      }
+      .avatarColorInvertido {
+          width: 100px;
+          height: 100px;
+        }
+
+        span.author {
+            font-size: 28px;
+            align-items: center;
+        }
+
+        .comment {
+            padding: 32px;
+            margin-bottom: 4px;
+        }
+        .commentContent {
+          font-size: 26px;
+          word-break: break-word;
+        }
+
+        header.texto h1 {
+            font-size: 42px;
+            font-weight: 600;
+        }
+        .descripcionAnuncio {
+          font-size: 22px;
+        }
+     }
