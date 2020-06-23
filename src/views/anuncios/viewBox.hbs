@@ -49,7 +49,8 @@
           <div class="barra">
                     <div class="textoBarra aeae">
                         <div class="barra"> <textarea name="comentario" rows="6" cols="80" class="form-control aeae23" placeholder="Ingresa un comentario" id="message" placeholder="Escribi un comentario."></textarea>
-                          <input id="name" name="name" type="hidden" value="{{#if user}} {{user.name}} {{else}} Anonimo {{/if}}">
+                          <input id="name" name="name" type="hidden" value="{{#if user}} {{user.name}} {{else}} Anonimo {{/if}}"> 
+                          <input id="id" name="id" type="hidden" value="{{box2.id}}">
                         </div>
                     </div>
                 <button type="submit" class="btn btn-primary" id="send" >Comentar</button>
@@ -68,7 +69,7 @@
 
       <div class="aaa" id="comentar">
       </div>
-    <p id="menem"></p>
+    <p id="{{box2.id}}"></p>
     </div>
 
 

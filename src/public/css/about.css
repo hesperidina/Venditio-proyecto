@@ -3,6 +3,9 @@ html {
   overflow: hidden;
 }
 
+.f-arial{
+  font-family: arial;
+}
 body {
   color: #ffffff;
   margin: 0;

@@ -227,6 +227,10 @@ span.author {
       background: linear-gradient(#0232c4 25%, #ec9966 25%, #ec9966 50%, #c266cd 50%, #c266cd 75%, #35d4ff 75%, #35d4ff 100%);
     }
 
+    .commentList:hover {
+      background: 	#C0C0C0;
+    }
+
 
 
 

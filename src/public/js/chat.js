@@ -1,8 +1,9 @@
 const socket = io()
 let message = document.getElementById("message");
 let name = document.getElementById("name");
+let id = document.getElementById("id");
 let btn = document.getElementById("send");
-let output = document.getElementById("menem");
+var output = document.getElementById("menem");
 
 btn.addEventListener("click", function() {
   var numero = Math.floor(Math.random() * 112) + 1
@@ -35,10 +36,12 @@ btn.addEventListener("click", function() {
   socket.emit("chat:message", {
     name: name.value,
     message: message.value,
-    numero: numero
+    numero: numero,
+    id: id.value,
   });
 });
 
 socket.on("chat:message", function (data) {
+  var output = document.getElementById(data.id);
   output.innerHTML += "<div class=commentList id=commentList> <div class=comment>"  +  "<div class=commentAvatar> <div class=" + data.numero + ">  </div>  </div><div class=commentBody>" + "<div class=commentMetadata><div class=commentsTag unselect><span class=author>"+ data.name +"</span></div></div>  <div class=commentContent>" + data.message + "</div></div></div></div>"
 });

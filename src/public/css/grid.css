@@ -13,14 +13,25 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(1000, calc(100vw / 6));
   height: 100vh;
-  word-break: break-word;
+
 
 }
-
+@media screen and (max-width:1050px) {
+  .jijo {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1000, calc(100vw / 5));
+  }
+}
  @media screen and (max-width:900px) {
    .jijo {
      grid-template-columns: repeat(4, 1fr);
      grid-template-rows: repeat(1000, calc(100vw / 4));
+   }
+ }
+ @media screen and (max-width:750px) {
+   .jijo {
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(1000, calc(100vw / 3));
    }
  }
  @media screen and (max-width:600px) {
@@ -29,20 +40,38 @@
      grid-template-rows: repeat(1000, calc(100vw / 2));
    }
  }
+ @media screen and (max-width:300px) {
+   .jijo {
+     grid-template-columns: repeat(1, 1fr);
+     grid-template-rows: repeat(1000, calc(100vw / 1));
+   }
+ }
+
+
+.precio1 {
+  font-size: 12px;
+  display: flex;
+  align-items:flex-start;
+  background-color: #23232e;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
+  border-right: -50px;
+  padding: 3px;
+    border-radius: 3px;
+}
+
 .box {
   word-break: break-word;
-
   font-family: arial;
   font-weight: 700;
   font-size: 18px;
+  display: flex;
+  align-items: flex-end;
   color: white;
   text-decoration: none;
   background-size: cover;
   background-position: center;
   background-color: #cccccc;
-  display: flex;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.45);
-  align-items: flex-end;
   padding: 10px;
   -webkit-transition:all .8s ease;
   -moz-transition:all .8s ease;
@@ -61,6 +90,13 @@
     grid-template-rows: repeat(1000, calc(100vw / 2));}
   .box {   font-size: 42px;
       border-width: 1rem;}
+
+      .precio1 {
+
+        font-size: 24px;
+        display: flex;
+        align-items:flex-start;
+      }
   }
 
 #inicio {
